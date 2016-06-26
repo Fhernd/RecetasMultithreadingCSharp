@@ -142,5 +142,12 @@ namespace Ch05_UsingCSharp5Dot0
             // Cierre con Control-C o Control-Break: 
             Limpiar();
         }
+
+        public static void SeleccionarColoresEstandar()
+        {
+            Console.Clear();
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
+        }
     }
 }

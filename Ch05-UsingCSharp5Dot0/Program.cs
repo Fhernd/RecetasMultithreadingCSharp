@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Ch05_UsingCSharp5Dot0.R0501;
 
 namespace Ch05_UsingCSharp5Dot0
 {
@@ -20,18 +17,20 @@ namespace Ch05_UsingCSharp5Dot0
             {
                 Console.Clear();
                 Console.Title = "Recetas Multithreading en C# - R05 - Uso de C# 5.0";
+                Console.CursorVisible = false;
                 
                 string[] recetas = {"R0501", "R0502", "R0503", "R0504", "R0505", "R0506", "R0507", "R0508", "R0509"};
                 MenuConsola.DibujarTexto("Seleccione la receta a ejecutar", 25, 18, ConsoleColor.Black, ConsoleColor.White);
                 MenuConsola.DibujarTexto("[Ctrl-C o Ctrl-Break para Cerrar la Aplicación]", 16, 22, ConsoleColor.Black, ConsoleColor.White);
                 int seleccion = MenuConsola.SeleccionarReceta(recetas, 36, 3, ConsoleColor.Blue, ConsoleColor.White);
-                // do something with choice
+
                 Console.Beep();
+                MenuConsola.Limpiar();
                 switch (seleccion)
                 {
                     case 1:
                         Console.Title = "R0501: Uso Operador await";
-
+                        new TplVsAwait().Ejecutar();
                         break;
                     case 2:
                         break;
@@ -50,6 +49,9 @@ namespace Ch05_UsingCSharp5Dot0
                     case 9:
                         break;
                 }
+
+                Console.WriteLine("\n Presione Enter para continuar...");
+                Console.ReadLine();
 
                 MenuConsola.Limpiar();
             }
