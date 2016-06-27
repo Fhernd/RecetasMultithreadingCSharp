@@ -1,5 +1,6 @@
 ﻿using System;
 using Ch05_UsingCSharp5Dot0.R0501;
+using Ch05_UsingCSharp5Dot0.R0502;
 
 namespace Ch05_UsingCSharp5Dot0
 {
@@ -33,6 +34,9 @@ namespace Ch05_UsingCSharp5Dot0
                         new TplVsAwait().Ejecutar();
                         break;
                     case 2:
+                        Console.Title = "R0502: Operador await en Expresión Lambda";
+                        Console.WriteLine();
+                        new AwaitExpresionLambda().Ejecutar();
                         break;
                     case 3:
                         break;
