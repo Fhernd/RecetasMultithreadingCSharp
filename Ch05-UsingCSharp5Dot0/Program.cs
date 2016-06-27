@@ -1,6 +1,7 @@
 ﻿using System;
 using Ch05_UsingCSharp5Dot0.R0501;
 using Ch05_UsingCSharp5Dot0.R0502;
+using Ch05_UsingCSharp5Dot0.R0503;
 
 namespace Ch05_UsingCSharp5Dot0
 {
@@ -27,6 +28,7 @@ namespace Ch05_UsingCSharp5Dot0
 
                 Console.Beep();
                 MenuConsola.Limpiar();
+                Console.WriteLine();
                 switch (seleccion)
                 {
                     case 1:
@@ -35,10 +37,11 @@ namespace Ch05_UsingCSharp5Dot0
                         break;
                     case 2:
                         Console.Title = "R0502: Operador await en Expresión Lambda";
-                        Console.WriteLine();
                         new AwaitExpresionLambda().Ejecutar();
                         break;
                     case 3:
+                        Console.Title = "R0503: Operador await en Tareas Asincrónicas Consecutivas";
+                        new TareasAsincronicasConsecutivas().Ejecutar();
                         break;
                     case 4:
                         break;
