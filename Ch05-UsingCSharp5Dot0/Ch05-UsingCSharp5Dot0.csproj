@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,6 +52,7 @@
     <Compile Include="R0501\TplVsAwait.cs" />
     <Compile Include="R0502\AwaitExpresionLambda.cs" />
     <Compile Include="R0503\TareasAsincronicasConsecutivas.cs" />
+    <Compile Include="R0504\EjecucionParalelaConAwait.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

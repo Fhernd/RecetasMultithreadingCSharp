@@ -2,6 +2,7 @@
 using Ch05_UsingCSharp5Dot0.R0501;
 using Ch05_UsingCSharp5Dot0.R0502;
 using Ch05_UsingCSharp5Dot0.R0503;
+using Ch05_UsingCSharp5Dot0.R0504;
 
 namespace Ch05_UsingCSharp5Dot0
 {
@@ -44,6 +45,8 @@ namespace Ch05_UsingCSharp5Dot0
                         new TareasAsincronicasConsecutivas().Ejecutar();
                         break;
                     case 4:
+                        Console.Title = "R0504: Ejecución en Paralelo de Tareas con await";
+                        new EjecucionParalelaConAwait().Ejecutar();
                         break;
                     case 5:
                         break;
