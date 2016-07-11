@@ -3,11 +3,14 @@ using Ch05_UsingCSharp5Dot0.R0501;
 using Ch05_UsingCSharp5Dot0.R0502;
 using Ch05_UsingCSharp5Dot0.R0503;
 using Ch05_UsingCSharp5Dot0.R0504;
+using Ch05_UsingCSharp5Dot0.R0505;
+using Ch05_UsingCSharp5Dot0.R0506;
 
 namespace Ch05_UsingCSharp5Dot0
 {
     public class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
             Console.TreatControlCAsInput = false;
@@ -49,8 +52,12 @@ namespace Ch05_UsingCSharp5Dot0
                         new EjecucionParalelaConAwait().Ejecutar();
                         break;
                     case 5:
+                        Console.Title = "R0505: Manejo Excepciones en Operaciones Asincrónicas";
+                        new ManejoExcepcionesAsync().Ejecutar();
                         break;
                     case 6:
+                        Console.Title = "R0506: Control sobre el Cambio de Contexto de Sincronización";
+                        new ContextoSincronizacion().Ejecutar();
                         break;
                     case 7:
                         break;
