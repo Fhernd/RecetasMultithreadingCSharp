@@ -5,6 +5,7 @@ using Ch05_UsingCSharp5Dot0.R0503;
 using Ch05_UsingCSharp5Dot0.R0504;
 using Ch05_UsingCSharp5Dot0.R0505;
 using Ch05_UsingCSharp5Dot0.R0506;
+using Ch05_UsingCSharp5Dot0.R0507;
 
 namespace Ch05_UsingCSharp5Dot0
 {
@@ -60,6 +61,8 @@ namespace Ch05_UsingCSharp5Dot0
                         new ContextoSincronizacion().Ejecutar();
                         break;
                     case 7:
+                        Console.Title = "R0507: Manejo de void en Operaciones Asincrónicas";
+                        new VoidAsync().Ejecutar();
                         break;
                     case 8:
                         break;
