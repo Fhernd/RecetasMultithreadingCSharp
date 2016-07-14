@@ -64,6 +64,9 @@
     <Compile Include="R0506\ContextoSincronizacion.cs" />
     <Compile Include="R0507\UsoUnhandledException.cs" />
     <Compile Include="R0507\VoidAsync.cs" />
+    <Compile Include="R0508\AwaitablePersonalizado.cs" />
+    <Compile Include="R0508\AwaiterPersonalizado.cs" />
+    <Compile Include="R0508\PersonalizacionAwait.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -72,6 +75,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
